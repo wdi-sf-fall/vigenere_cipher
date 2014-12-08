@@ -7,12 +7,12 @@ describe("vigenere", function() {
       expect(vigenere.encode("thesecretkey", "bobandalice")).toEqual("uvfsrfrpbmiz");
     });
   })
-  // describe("#decode", function() {
-  //   it("decodes the message doageaus with keyword banana", function() {
-  //     expect(vigenere.decode("oypvvvmutsowryfjdytekgrev", "supersecretsauce")).toEqual("wearediscoveredfleeatonce");
-  //   });
-  //   it("decodes the message doageaus with keyword banana", function() {
-  //     expect(vigenere.decode("fhwnxlhwv", "startedfromthebottom")).toEqual("nowwehere");
-  //   });
-  // })
+  describe("#decode", function() {
+    it("decodes the message doageaus with keyword banana", function() {
+      expect(vigenere.decode("oypvvvmutsowryfjdytekgrev", "supersecretsauce")).toEqual("wearediscoveredfleeatonce");
+    });
+    it("decodes the message doageaus with keyword banana", function() {
+      expect(vigenere.decode("fhwnxlhwv", "startedfromthebottom")).toEqual("nowwehere");
+    });
+  })
 });
